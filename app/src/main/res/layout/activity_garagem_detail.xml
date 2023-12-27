@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#585ddb">
+
+    <!-- Nome do portão -->
+
+    <RelativeLayout
+        android:id="@+id/listContainer"
+        android:layout_width="331dp"
+        android:layout_height="251dp"
+        android:layout_above="@+id/buttonBack"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="14dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#ffffff"
+            android:divider="#B6B6B6"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewGateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="garagem da vizinha"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <!-- Estado do portão -->
+
+    <TextView
+        android:id="@+id/textViewGateName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="333dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="4dp"
+        android:text="Ultimos Acessos:"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textViewGateName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Lista de mudanças de estado -->
+
+    <!-- Botão Voltar -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="24dp"
+        android:background="#50c2c9"
+        android:text="Voltar"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonOpenClose"
+        android:layout_width="207dp"
+        android:layout_height="72dp"
+        android:layout_above="@id/listContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="123dp"
+        android:text="A carregar estado..." />
+
+</RelativeLayout>
