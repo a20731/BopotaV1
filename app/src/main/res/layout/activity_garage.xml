@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#585ddb">
+
+    <!-- Texto de boas-vindas -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codominio BOPOTA TESTE"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!-- Retângulo com ListView e ProgressBar -->
+
+    <RelativeLayout
+        android:id="@+id/listContainer"
+        android:layout_width="328dp"
+        android:layout_height="540dp"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="59dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="325dp"
+            android:layout_height="543dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#ffffff"
+            android:divider="#B6B6B6"
+            android:dividerHeight="1dp" >
+
+        </ListView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="229dp"
+        android:layout_height="209dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
