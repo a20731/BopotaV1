@@ -83,7 +83,7 @@ class GaragemDetailActivity : AppCompatActivity() {
         listView = findViewById(R.id.listView)
         preferencesManager = PreferencesManager(this)
         val textViewGateName = findViewById<TextView>(R.id.textViewGateName)
-
+//
         // Recupere o ID do equipamento do Intent
         val equipamentoId = intent.getIntExtra("equipamento_id", -1)
         val equipamentoNome = intent.getStringExtra("equipamento_nome")
