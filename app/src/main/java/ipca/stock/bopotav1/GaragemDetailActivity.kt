@@ -15,6 +15,7 @@ class GaragemDetailActivity : AppCompatActivity() {
 
     private lateinit var listView: ListView
     private lateinit var preferencesManager: PreferencesManager
+    private lateinit var buttonBack: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -79,6 +80,7 @@ class GaragemDetailActivity : AppCompatActivity() {
             }
         }
 
+
         // Inicialize a ListView
         listView = findViewById(R.id.listView)
         preferencesManager = PreferencesManager(this)
@@ -109,6 +111,11 @@ class GaragemDetailActivity : AppCompatActivity() {
         } else {
             // O ID do equipamento não foi passado corretamente
             // Lidar com o caso de ID não válido
+        }
+
+        buttonBack = findViewById(R.id.ButtonBack)
+        buttonBack.setOnClickListener {
+            finish()
         }
     }
 

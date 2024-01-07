@@ -9,46 +9,48 @@
         android:id="@+id/textViewWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Codominio BOPOTA TESTE"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:text="Bem-Vindo"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
 
-    <!-- Retângulo com ListView e ProgressBar -->
-
+    <!-- Retângulo com ListView -->
     <RelativeLayout
         android:id="@+id/listContainer"
-        android:layout_width="328dp"
-        android:layout_height="540dp"
+        android:layout_width="360dp"
+        android:layout_height="544dp"
         android:layout_below="@id/textViewWelcome"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="59dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff">
 
         <ListView
             android:id="@+id/listView"
-            android:layout_width="325dp"
-            android:layout_height="543dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="#ffffff"
+            android:layout_width="347dp"
+            android:layout_height="528dp"
             android:divider="#B6B6B6"
-            android:dividerHeight="1dp" >
+            android:dividerHeight="1dp" />
 
-        </ListView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
     </RelativeLayout>
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="229dp"
-        android:layout_height="209dp"
-        android:layout_centerInParent="true" />
+    <!-- Botão na parte inferior -->
+    <Button
+        android:id="@+id/BottomExit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Sair" />
 
 </RelativeLayout>
+

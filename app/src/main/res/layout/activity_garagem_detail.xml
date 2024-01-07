@@ -10,7 +10,7 @@
         android:id="@+id/listContainer"
         android:layout_width="331dp"
         android:layout_height="251dp"
-        android:layout_above="@+id/buttonBack"
+        android:layout_above="@+id/ButtonBack"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="28dp"
@@ -37,7 +37,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="garagem da vizinha"
+        android:text="Nome Garagem"
         android:textColor="#ffffff"
         android:textSize="28sp" />
 
@@ -51,10 +51,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="333dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="9dp"
         android:text="Ultimos Acessos:"
         android:textColor="#ffffff"
         android:textSize="20sp" />
@@ -71,7 +71,7 @@
 
     <!-- Botão Voltar -->
     <Button
-        android:id="@+id/buttonBack"
+        android:id="@+id/ButtonBack"
         android:layout_width="325dp"
         android:layout_height="62dp"
         android:layout_alignParentStart="true"

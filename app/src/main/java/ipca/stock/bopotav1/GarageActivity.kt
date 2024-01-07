@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ListView
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +19,7 @@ class GarageActivity : AppCompatActivity() {
     private lateinit var PreferencesManager: PreferencesManager
     private lateinit var listView: ListView
     private lateinit var progressBar: ProgressBar
-    //carlos
+    private lateinit var buttonExit: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,7 @@ class GarageActivity : AppCompatActivity() {
         PreferencesManager = PreferencesManager(this)
         listView = findViewById(R.id.listView)
         progressBar = findViewById(R.id.progressBar)
+        buttonExit = findViewById(R.id.BottomExit1)
 
         // Obter token salvo nas preferências
         val savedToken = PreferencesManager.getToken()
@@ -71,6 +73,16 @@ class GarageActivity : AppCompatActivity() {
         } else {
             // O token não está salvo, lidar de acordo (por exemplo, redirecionar para a tela de login)
         }
+
+        buttonExit.setOnClickListener {
+            exitApplication()
+        }
+    }
+
+
+    // Fecha app
+    private fun exitApplication() {
+        finishAffinity()
     }
 
     private fun showProgressBar() {
