@@ -18,6 +18,7 @@ class GarageActivity : AppCompatActivity() {
     private lateinit var PreferencesManager: PreferencesManager
     private lateinit var listView: ListView
     private lateinit var progressBar: ProgressBar
+    //carlos
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
