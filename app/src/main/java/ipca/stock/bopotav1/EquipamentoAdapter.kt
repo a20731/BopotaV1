@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.CheckBox
+import android.widget.Switch
 import android.widget.TextView
 
 class EquipamentoAdapter(private val context: Context, private val equipamentos: List<Equipamento>) : BaseAdapter() {
@@ -43,7 +44,7 @@ class EquipamentoAdapter(private val context: Context, private val equipamentos:
         // Preencher os dados do equipamento no layout
         val equipamento = equipamentos[position]
         viewHolder.textViewGarageName.text = equipamento.descricao1
-        viewHolder.checkBox.isChecked = equipamento.ativo
+        viewHolder.switchStatus.isChecked = equipamento.ativo
 
         // Adicionar um listener de clique ao item da lista
         view.setOnClickListener {
@@ -62,6 +63,6 @@ class EquipamentoAdapter(private val context: Context, private val equipamentos:
 
     private class ViewHolder(view: View) {
         val textViewGarageName: TextView = view.findViewById(R.id.textViewGarageName)
-        val checkBox: CheckBox = view.findViewById(R.id.checkBox)
+        val switchStatus: Switch = view.findViewById(R.id.switchStatusGarage) // Corrigido para switchStatus
     }
 }
